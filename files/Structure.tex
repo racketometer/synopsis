@@ -1,0 +1,8 @@
+\chapter{Structure}
+The initial structure of the application is as sketched in figure \ref{fig:sketch:dashboard}. The main activity is a dashboard showing the current stats. By swiping to the left a more detailed board is shown. This could be done with fragments. A possibility to share the current statistics on social media should be present as well.
+
+\graphic{0.3}{sketches/dashboard}{Dashboard sketch}{fig:sketch:dashboard}
+
+The data shown should come from a local database with the users latest data. When the applications finds it applicable, and preferably on start at least, it should synchronize the local data with a remote web service to get the latest data. This should be done in a background service to avoid blocking the user interface.
+
+A menu should be available to enable the user to manage its profile and force a data synchronization. Further more the possibility to get data from a external sensor should be presented. In the initial scope of this application, this data will be fetched from a web service, but later on it should be done with BlueTooth.
